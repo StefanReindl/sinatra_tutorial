@@ -23,7 +23,6 @@ post '/messages' do
     content: params[:content],
     author:  params[:author]
   )
-  binding.pry
   if @message.save
     redirect '/messages'
   else
